@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "296846260472",
+    "firebase_url": "https://andro-lec.firebaseio.com",
+    "project_id": "andro-lec",
+    "storage_bucket": "andro-lec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296846260472:android:acc682818f5c9dd8e7e30d",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296846260472-irvtub3c61uj9u5lsa95h6uisg4lumii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgWolzhXfysE4aRqPtWsBw1Ko5t1fKdaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296846260472-irvtub3c61uj9u5lsa95h6uisg4lumii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

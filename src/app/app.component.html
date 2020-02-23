@@ -1,0 +1,28 @@
+<ion-app>
+    <ion-menu side="start" contentId="content">
+      <ion-header>
+        <ion-toolbar>
+        <ion-card>
+          <ion-card-content>
+            <ion-img src="assets/lec-img.jpg"></ion-img>
+            <ion-card-subtitle>Lumbini Engineering College</ion-card-subtitle>
+            <ion-card-title>Student's Name</ion-card-title>
+          </ion-card-content>
+        </ion-card>
+        
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      
+      <ion-list *ngFor="let p of pages">
+        <ion-menu-toggle auto-hide="false">
+        <ion-item routerDirection="root" [routerLink]="p.url" [class.active-item]="selectedPath === p.url">
+            <ion-label>{{p.title}}</ion-label>
+            <ion-icon [name]=p.icon slot="end"></ion-icon>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content"></ion-router-outlet>
+</ion-app>

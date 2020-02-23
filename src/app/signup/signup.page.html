@@ -1,0 +1,46 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Signup</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <div class="signin">
+    <div class="logo">
+      <img src="assets/icon/lec.jpg">
+    </div>
+    <ion-card class="card1" style="justify-content: center;">
+      <ion-card-header>
+        <ion-card-title style="text-align:center;">
+              Signup
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">College Roll</ion-label>
+            <ion-input type="number" [(ngModel)]="student.collegeRollNo"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Name</ion-label>
+            <ion-input type="text" [(ngModel)]="student.name"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Semester</ion-label>
+            <ion-input type="text" [(ngModel)]="student.semester"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" [(ngModel)]="student.password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Confirm Password</ion-label>
+            <ion-input type="password" [(ngModel)]="student.cpassword"></ion-input>
+          </ion-item>
+        </ion-list>
+      <ion-button fill="solid" expand="block" color="dark" (click)="signup()" >Signup</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <div class="signin">
+    <div class="logo">
+      <img src="assets/icon/lec.jpg">
+    </div>
+    <ion-card class="card1" style="justify-content: center;">
+      <ion-card-header>
+        <ion-card-title style="text-align:center;">
+              LOGIN
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">College Roll</ion-label>
+            <ion-input type="number" [(ngModel)]="collegeRoll"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+        </ion-list>
+      <span>
+        <ion-button fill="solid"  color="primary" (click)="login()" >Login</ion-button>
+        <ion-button fill="solid"  color="primary" routerLink="/signup" >Signup</ion-button>
+      </span>
+      
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
